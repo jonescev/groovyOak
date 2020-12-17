@@ -22,8 +22,8 @@ def rmNode(def session, String path) {
     }
 }
 
-def addNode(def session, String path, Strin parentPath) {
-    println "Removing node ${path}"
+def addNode(def session, String path, String parentPath) {
+    println "Adding node ${path}"
 
     NodeStore ns = session.store
     def nb = ns.root.builder()
